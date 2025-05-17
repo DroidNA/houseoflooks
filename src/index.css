@@ -4,9 +4,13 @@
 @font-face {
   font-family: "GetVoipGrotesque";
   src: local("GetVoipGrotesque"),
-    url("/src/fonts/GetVoipGrotesque.ttf") format("truetype");
+    url("./fonts/GetVoipGrotesque.ttf") format("truetype");
 }
 
 .font-face-logo {
   font-family: "GetVoipGrotesque";
+}
+
+body {
+  background-color: white;
 }
