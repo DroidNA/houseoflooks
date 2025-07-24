@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import siteLogo from "../../public/logo-bl-t.svg";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
+import myFont from '../fonts/GetVoIPGrotesque.ttf';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +11,21 @@ const Header = () => {
   };
 
   return (
-    <>
+    <>    
+    <style>
+        {`
+          @font-face {
+            font-family: 'MyFont';
+            src: url(${myFont}) format('woff2');
+            font-weight: normal;
+            font-style: normal;
+          }
+
+          .font-face-logo {
+            font-family: 'MyFont', sans-serif;
+          }
+        `}
+      </style>
       <div className="header  flex items-center justify-between p-2 sm:p-4 text-slate-900">
         <Link to="/">
           <img

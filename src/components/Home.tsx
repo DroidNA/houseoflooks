@@ -4,14 +4,6 @@ import forHerImage from "../assets/images/for_her.jfif";
 import forHimImage from "../assets/images/for-him.jpg";
 
 const Home = () => {
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const res = await axios.get("http://localhost:3000");
-  //     console.log(res.data);
-  //   };
-  //   fetchData();
-  // }, []);
-
   return (
     <>
       <div className="carousel carousel-center bg-neutral rounded-box space-x-4 p-4">
